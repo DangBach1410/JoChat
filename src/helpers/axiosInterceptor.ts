@@ -16,10 +16,7 @@ api.interceptors.request.use(
       config.url?.includes('/login') || config.url?.includes('/register');
 
     if (accessToken && !isAuthUrl) {
-      config.headers = {
-        ...config.headers,
-        Authorization: `Bearer ${accessToken}`,
-      };
+      config.headers.Authorization = `Bearer ${accessToken}`;
     }
 
     return config;
