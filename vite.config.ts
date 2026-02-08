@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => {
     server: {
       port: 4000,
       allowedHosts: [
-        "nilsa-tapestried-nonjudicially.ngrok-free.dev",
+        "zochat.duckdns.org",
       ],
       proxy: {
         "/ws-presence": {
